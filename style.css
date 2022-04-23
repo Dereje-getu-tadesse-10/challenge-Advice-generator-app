@@ -48,7 +48,7 @@ span{
 
 main 
 #card
-p{
+h1{
     font-family: var(--FontFamily);
     font-size: var(--Fontsize);
     color: white;
