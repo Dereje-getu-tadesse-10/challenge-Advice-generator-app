@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+    --Fontsize: 28px;
+    --FontFamily:'Manrope', sans-serif;
+}
+
+body{
+    background-color: var(--DarkBlue);
+}
+
+main{
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main
+#card{
+    position: relative;
+    height: 270px;
+    width: 80%;
+    padding: 20px;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 10px;
+    text-align: center;
+}
+
+main 
+#card
+span{
+    letter-spacing: 1.3px;
+    font-family: var(--FontFamily);
+    color: var(--NeonGreen);
+}
+
+main 
+#card
+h2{
+    font-family: var(--FontFamily);
+    font-size: var(--Fontsize);
+    color: white;
+}
+
+/* container advice */
+
+#card
+.containerAdvice{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Circle green */
+
+.greenCircle{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -25px;
+    left: 42.9%;
+    border: none;
+    background-color: var(--NeonGreen);
+}
+
+.greenCircle:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 40px 7px var(--NeonGreen);
+}
+
+/* responsive */
+
+@media only screen and (min-width:490px){
+    main
+    #card{
+        width: 400px;
+    }
+    .greenCircle{
+        left: 45%;
+    }
+}
