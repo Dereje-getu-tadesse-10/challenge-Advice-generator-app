@@ -86,6 +86,16 @@ h2{
     box-shadow: 1px 1px 40px 7px var(--NeonGreen);
 }
 
+.attribution{
+    font-family: var(--FontFamily);
+    text-align: center;
+    color: white;
+}
+.attribution
+a{
+    color: var(--LightCyan);
+}
+
 /* responsive */
 
 @media only screen and (min-width:490px){
